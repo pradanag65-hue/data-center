@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portal Aplikasi</title>
+<meta name="theme-color" content="#0D7A58">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%230D7A58'/%3E%3Ctext x='50' y='66' font-size='52' text-anchor='middle'%3E%F0%9F%9A%8C%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stage">
+ <div class="panel">
+  <div class="circle"></div>
+  <div class="in">
+   <div class="top">
+    <div class="logo" id="logo"></div>
+    <nav class="nav" id="nav" aria-label="Kategori"></nav>
+    <label class="search"><input id="q" type="search" placeholder="Cari" aria-label="Cari aplikasi" autocomplete="off"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></label>
+    <div class="basket"><i class="rd"></i><span>Aplikasi (<b id="n">0</b>)</span><div class="burger" aria-hidden="true"><i></i><i></i><i></i></div></div>
+   </div>
+   <div class="hero">
+    <div class="tag"><div class="ti" id="tg"></div><a href="#deck">Lihat semua</a></div>
+    <div class="hr">
+     <h1 id="h"><span>Semua aplikasi,</span><span>satu halte.</span></h1>
+     <p>Pilih tujuanmu, ketuk, langsung berangkat. Semua web app buatanmu terkumpul di satu tempat.</p>
+     <div class="cta"><a id="go" href="#" target="_blank" rel="noopener">Buka yang terpilih</a></div>
+    </div>
+   </div>
+   <div class="deck" id="deck"></div>
+   <p class="empty" id="empty" hidden>Tidak ada aplikasi yang cocok. Coba kata kunci lain.</p>
+  </div>
+ </div>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
