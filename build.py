@@ -46,10 +46,13 @@ def main():
         rows = clean(fetch_rows())
     except Exception as exc:  # jangan gagalkan deploy kalau Google sedang bermasalah
         print(f"Gagal membaca Sheet: {exc}")
+        if "401" in str(exc) or "403" in str(exc):
+            print("Sheet masih privat. Buka Share > General access > 'Anyone with the link' > Viewer.")
         if os.path.exists(OUT):
             print("Memakai apps.json yang sudah ada.")
-            return 0
-        return 1
+        else:
+            print("apps.json belum ada; deploy lanjut, halaman memakai data langsung dari Sheet / daftar cadangan.")
+        return 0
     if len(rows) < 2:
         print("Sheet kosong, apps.json tidak diubah.")
         return 0
