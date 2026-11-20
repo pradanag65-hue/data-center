@@ -1,11 +1,11 @@
 {
- "name": "Portal Aplikasi",
- "short_name": "Portal",
+ "name": "Data Center",
+ "short_name": "Data Center",
  "description": "Semua aplikasi di satu tempat",
  "start_url": "./",
  "scope": "./",
  "display": "standalone",
- "background_color": "#D6EAE5",
+ "background_color": "#FFFFFF",
  "theme_color": "#0D7A58",
  "lang": "id",
  "icons": [
