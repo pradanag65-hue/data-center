@@ -34,6 +34,9 @@ def clean(rows):
         nama, url = r[0].strip(), r[1].strip()
         if not nama or not url:
             continue
+        if nama.lower() == "pengumuman":  # baris banner, bukan aplikasi
+            out.append([nama, url, r[2].strip(), r[3].strip(), r[4].strip(), r[5].strip()])
+            continue
         if not url.startswith(("http://", "https://")):
             print(f"Dilewati (URL tidak valid): {nama}")
             continue
