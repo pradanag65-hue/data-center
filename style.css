@@ -129,5 +129,5 @@ h1 span{display:block}
 @media (prefers-reduced-motion:no-preference){.st.wait i{animation:pl 1.2s ease-in-out infinite}@keyframes pl{50%{opacity:.35}}}
 
 /* logo Data Center */
-.logo{width:auto;height:56px;padding:7px 12px;border-radius:14px;background:#fff;box-shadow:inset 0 0 0 1px var(--line)}
-.logo img{display:block;height:100%;width:auto}
+.logo{width:auto;height:auto;padding:6px 10px;border-radius:12px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);display:flex;align-items:center}
+.logo img{display:block;height:34px;width:auto;max-width:none}

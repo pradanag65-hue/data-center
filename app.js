@@ -17,7 +17,7 @@ var $=function(i){return document.getElementById(i)};
 var deck=$("deck"),q=$("q"),nav=$("nav"),empty=$("empty");
 var cats=["Semua"].concat(APPS.map(function(a){return a.cat}).filter(function(c,i,r){return c&&r.indexOf(c)===i}));
 var active="Semua",idx=0,dir=0;
-$("logo").innerHTML='<img src="logo-mark.png" alt="Data Center" height="40">';
+$("logo").innerHTML='<img src="logo-mark.png" alt="Data Center" height="34">';
 $("tg").innerHTML=ico("bus",16,2)+'<span>Portal aplikasi</span>';
 var chev='<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
 var arrL='<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>';

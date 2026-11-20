@@ -1,5 +1,5 @@
 // Service worker: shell aplikasi tersimpan di perangkat, data tetap segar.
-const V = "portal-v2";
+const V = "portal-v3";
 const SHELL = ["./", "index.html", "style.css", "app.js", "features.js", "manifest.webmanifest", "icon-192.png", "icon-512.png", "favicon.png", "logo-mark.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(V).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => {
